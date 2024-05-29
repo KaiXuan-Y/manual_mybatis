@@ -1,4 +1,4 @@
-package dao;
+package cn.manual.mybatis.session.dao;
 
 public interface IUserDao {
     String queryUserName(String uId);
