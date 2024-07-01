@@ -35,7 +35,7 @@ public class MapperRegistry {
         }
     }
 
-    public <T> void addMappers(String packageName){
+    public void addMappers(String packageName){
         Set<Class<?>> mapperSet = ClassScanner.scanPackage(packageName);
         mapperSet.forEach(this::addMapper);
     }
